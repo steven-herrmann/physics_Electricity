@@ -2,4 +2,4 @@
 100 Ohm Resistor BrnBlkBrnGld
 250 Ohm Resistor RdGrnBrnGld
 1k Ohm Resistor BrnBlkRdGld
-16k Ohm Resistor BrnBlueRdGld
+1.6k Ohm Resistor BrnBlueRdGld
