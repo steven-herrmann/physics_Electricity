@@ -1,0 +1,5 @@
+50 Ohm Resistor GrnBkBkGld
+100 Ohm Resistor BrnBlkBrnGld
+250 Ohm Resistor RdGrnBrnGld
+1k Ohm Resistor BrnBlkRdGld
+16k Ohm Resistor BrnBlueRdGld
