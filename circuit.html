@@ -1,1 +1,94 @@
-d
+<!doctype html>
+
+<html>
+  <head>
+		<title> stuff</title>
+		<style type="text/css">
+			#container {
+				width:1200px;
+				height: 700px;
+				background-color:black;
+				margin:auto;
+				color:white;
+			}
+			
+				#controls {
+					width:400px;
+					height:700px;
+					background-color:#46594b;
+					float:left;
+				}
+				
+					#controls div{
+						width:100%;
+						height:50%;
+						padding-left:50px;
+						padding-top:40px;
+					}
+					
+						#controls div ul li {
+							list-style-type:square;
+						}
+				
+				#display {
+					width:800px;
+					height:700px;
+					float:left;
+					background-color:#f2d8a7;
+				}
+				
+				canvas {
+					background-color:Wheat;
+					position:relative;
+					margin-left:25px;
+					margin-top:25px;
+				}
+				
+				#container div ul li:hover {
+					color:red;
+					cursor:pointer;
+				}
+		</style>
+	</head>
+	
+	<body>
+		<script src="jQuery.js"></script>
+		<script type='text/javascript'>
+			$(document).on('click','li',function(e) {
+				alert($(this).attr('title'));
+			})
+			
+			$(document).ready(function() {
+				Renderer = $('canvas')[0].getContext('2d');
+				Renderer.fillRect(100,100,100,100);
+			});
+		</script>
+		<div id="container">
+			<div id="controls">
+				<div id="Resistors">
+					<h1>Resistors</h1>
+					<ul>
+						<li title="50">50 Ohms</li>
+						<li title="100">100 Ohms</li>
+						<li title="250">250 Ohms</li>
+						<li title="1000">1000 Ohms</li>
+						<li title="1600">1600 Ohms</li>
+					</ul>
+				</div>
+				<div id="Batteries">
+					<h1>Batteries</h1>
+					<ul>
+						<li title="50">50 Volts</li>
+						<li title="100">100 Volts</li>
+						<li title="250">250 Volts</li>
+						<li title="1000">1000 Volts</li>
+						<li title="1600">1600 Volts</li>
+					</ul>
+				</div>
+			</div>
+			<div id="display">
+				<canvas width="750" height="650"></canvas>
+			</div>
+		</div>
+	</body>
+</html>
